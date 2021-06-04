@@ -1,0 +1,188 @@
+# Tablist v1.2.3.1 by sn1cko
+# Time is set in milliseconds which means every 20 = 1 second
+# for example: 6000 = 5 minuntes OR 300 = 15 seconds
+# 
+# The announcer will never stop if the time is set to 0
+# Else it will stop after the amount of milliseconds you wish
+# 
+# There are currently 15 variables available which can be built in
+# for example %player% - will display the playername or %health% - will give out the health
+# all other variables can be found on the website
+# http://dev.bukkit.org/bukkit-plugins/tablist/pages/variables
+Tablist:
+  Settings:
+    Staff:
+      Permission: tablist.staff
+    Toggle: true
+    Time: 10
+    Messages:
+      Header:
+      - |-
+        &b&l--------------------------
+        &3&lSe
+        &1&lВаш ник: &3&l%player%
+        &1&lЗдоровье: &a&l%health% &7&l/ &2&l%maxhealth%
+        &1&lЕда: &a&l%foodlevel% &7&l/ &2&l20.0
+
+            &7&m===================
+      - |-
+        &b&l--------------------------
+        &4&lServ
+        &3&lВаш ник: &3&l%player%
+        &3&lЗдоровье: &a&l%health% &7&l/ &2&l%maxhealth%
+        &3&lЕда: &a&l%foodlevel% &7&l/ &2&l20.0
+
+            &7&m===================
+      - |-
+        &b&l--------------------------
+        &5&lServer
+        &4&lВаш ник: &3&l%player%
+        &4&lЗдоровье: &a&l%health% &7&l/ &2&l%maxhealth%
+        &4&lЕда: &a&l%foodlevel% &7&l/ &2&l20.0
+
+            &7&m===================
+      - |-
+        &b&l--------------------------
+        &6&lServer by Sl
+        &2&lВаш ник: &3&l%player%
+        &2&lЗдоровье: &a&l%health% &7&l/ &2&l%maxhealth%
+        &2&lЕда: &a&l%foodlevel% &7&l/ &2&l20.0
+
+            &7&m===================
+      - |-
+        &b&l--------------------------
+        &7&lServer by Slav
+        &c&lВаш ник: &3&l%player%
+        &c&lЗдоровье: &a&l%health% &7&l/ &2&l%maxhealth%
+        &c&lЕда: &a&l%foodlevel% &7&l/ &2&l20.0
+
+            &7&m===================
+      - |-
+        &b&l--------------------------
+        &8&lServer by Slavik
+        &7&lВаш ник: &3&l%player%
+        &7&lЗдоровье: &a&l%health% &7&l/ &2&l%maxhealth%
+        &7&lЕда: &a&l%foodlevel% &7&l/ &2&l20.0
+
+            &7&m===================
+      - |-
+        &b&l--------------------------
+        &9&lServer by Slavik12
+        &6&lВаш ник: &3&l%player%
+        &6&lЗдоровье: &a&l%health% &7&l/ &2&l%maxhealth%
+        &6&lЕда: &a&l%foodlevel% &7&l/ &2&l20.0
+
+            &7&m===================
+      - |-
+        &b&l--------------------------
+        &a&lServer by Slavik1231
+        &a&lВаш ник: &3&l%player%
+        &a&lЗдоровье: &a&l%health% &7&l/ &2&l%maxhealth%
+        &a&lЕда: &a&l%foodlevel% &7&l/ &2&l20.0
+
+            &7&m===================
+      - |-
+        &b&l--------------------------
+        &b&lServer by Slavik123123
+        &b&lВаш ник: &3&l%player%
+        &b&lЗдоровье: &a&l%health% &7&l/ &2&l%maxhealth%
+        &b&lЕда: &a&l%foodlevel% &7&l/ &2&l20.0
+
+            &7&m===================
+      - |-
+        &b&l--------------------------
+        &c&lServer by Slavik123123123
+        &5&lВаш ник: &3&l%player%
+        &5&lЗдоровье: &a&l%health% &7&l/ &2&l%maxhealth%
+        &5&lЕда: &a&l%foodlevel% &7&l/ &2&l20.0
+
+            &7&m===================
+      - |-
+        &b&l--------------------------
+        &d&lServer by Slavik123123123
+        &2&lВаш ник: &3&l%player%
+        &2&lЗдоровье: &a&l%health% &7&l/ &2&l%maxhealth%
+        &2&lЕда: &a&l%foodlevel% &7&l/ &2&l20.0
+
+            &7&m===================
+      - |-
+        &b&l--------------------------
+        &e&lServer by Slavik123123123
+        &e&lВаш ник: &3&l%player%
+        &e&lЗдоровье: &a&l%health% &7&l/ &2&l%maxhealth%
+        &e&lЕда: &a&l%foodlevel% &7&l/ &2&l20.0
+
+            &7&m===================
+      Footer:
+      - |-
+        &7&m===================
+
+        &e&o&lOnline: &e&o%onlineplayers%&8&o/&e&o%maxonlineplayers%
+
+        &b&l--------------------------
+      - |-
+        &7&m===================
+
+        &e&o&lOnline: &d&o%onlineplayers%&8&o/&d&o%maxonlineplayers%
+
+        &b&l--------------------------
+      - |-
+        &7&m===================
+
+        &e&o&lOnline: &b&o%onlineplayers%&8&o/&b&o%maxonlineplayers%
+
+        &b&l--------------------------
+      - |-
+        &7&m===================
+
+        &e&o&lOnline: &c&o%onlineplayers%&8&o/&c&o%maxonlineplayers%
+
+        &b&l--------------------------
+      - |-
+        &7&m===================
+
+        &e&o&lOnline: &a&o%onlineplayers%&8&o/&a&o%maxonlineplayers%
+
+        &b&l--------------------------
+      - |-
+        &7&m===================
+
+        &e&o&lOnline: &8&o%onlineplayers%&8&o/&8&o%maxonlineplayers%
+
+        &b&l--------------------------
+      - |-
+        &7&m===================
+
+        &e&o&lOnline: &7&o%onlineplayers%&8&o/&7&o%maxonlineplayers%
+
+        &b&l--------------------------
+      - |-
+        &7&m===================
+
+        &e&o&lOnline: &6&o%onlineplayers%&8&o/&6&o%maxonlineplayers%
+
+        &b&l--------------------------
+      - |-
+        &7&m===================
+
+        &e&o&lOnline: &5&o%onlineplayers%&8&o/&5&o%maxonlineplayers%
+
+        &b&l--------------------------
+      - |-
+        &7&m===================
+
+        &e&o&lOnline: &4&o%onlineplayers%&8&o/&4&o%maxonlineplayers%
+
+        &b&l--------------------------
+      - |-
+        &7&m===================
+
+        &e&o&lOnline: &3&o%onlineplayers%&8&o/&3&o%maxonlineplayers%
+
+        &b&l--------------------------
+      - |-
+        &7&m===================
+
+        &e&o&lOnline: &2&o%onlineplayers%&8&o/&2&o%maxonlineplayers%
+
+        &b&l--------------------------

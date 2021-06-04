@@ -1,0 +1,1 @@
+Скопировать Start.bat и spigot.yml В папку с Spigot.jar

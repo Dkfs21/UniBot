@@ -1,0 +1,82 @@
+# ---------------------- ChatGuard 7.0 default configuration file --------------------- #
+# Dont worry if you have just updated plugin. Old configuration saved as old_config.yml #
+#        Please read comments and dont ask silly questions about configurating          #
+#   Dont use Notepad++ default tabulation. Enable 'Replace by space' in Tab Settings    #
+# ------------------------------------------------------------------------------------- #
+# 
+# dont touch this
+Version: 3
+Check for updates: false
+Hard mode: false
+swear settings:
+  enabled: true
+  inform admins: true
+  max warnings: 10
+  custom replacement: <МАТ>
+caps settings:
+  enabled: true
+  inform admins: true
+  max warnings: 10
+  max caps percent: 60
+  min message lenght: 3
+flood settings:
+  enabled: true
+  inform admins: true
+  max warnings: 10
+  flood time: 10
+  message cooldown: 5
+  flood levels: 1
+  flood percent: 70
+spam settings:
+  enabled: true
+  inform admins: true
+  max warnings: 10
+  domain regexp: ([0-9a-z]{2,}\.)+(ru|com|org|ua|su|tv|net|biz|info|name|mobi|kz|by|lv|eu|tk)(:\d*)?
+  ip regexp: ((?<![0-9])(?:(?:25[0-5]|2[0-4][0-9]|[0-1]?[0-9]{1,2})[ ]?[.,-:; ][ ]?(?:25[0-5]|2[0-4][0-9]|[0-1]?[0-9]{1,2})[ ]?[., ][ ]?(?:25[0-5]|2[0-4][0-9]|[0-1]?[0-9]{1,2})[ ]?[., ][ ]?(?:25[0-5]|2[0-4][0-9]|[0-1]?[0-9]{1,2}))(?![0-9]))
+  custom replacement: <СПАМ>
+  max numbers: 5
+Messages:
+  cancel if violation: true
+  replacement: <censored>
+  enable character whitelist: true
+Warnings settings:
+  enabled: true
+  separate: true
+  max count: 10
+Punishment settings:
+  enabled: true
+  reasons:
+    '1': '{Player} кикнут за плохое поведение'
+    second: '{Player} забанен за капс'
+    another: '{Player} кикнут за плохое поведение'
+    flooder: В нашем чате появился флудер!!! - {Player}
+    silent: -s
+    mute-time: 1h
+  commands:
+    custom: false
+    common commands:
+    - kill {Player}
+    - ban {Player} 1d {Reason_1} {Reason_silent}
+    swear commands:
+    - mute {Player} {Reason_mute-time}
+    - broadcast {Reason_1}
+    caps commands:
+    - mute {Player} {Reason_mute-time}
+    - broadcast {Reason_capsing}
+    flood commands:
+    - mute {Player} {Reason_mute-time}
+    - broadcast {Reason_flooder}
+    spam commands:
+    - kick {Player} {Reason_another}
+    - broadcast {Reason_another}
+  max mute time: 1h
+Other settings:
+  check signs: true
+  check commands:
+  - /me:0
+  - /msg:1
+  - /tell:1
+  - /w:1
+  - /r:0
+  debug level: 0
+  use packets: false

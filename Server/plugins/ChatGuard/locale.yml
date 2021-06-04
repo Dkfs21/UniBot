@@ -1,0 +1,36 @@
+# 
+# messages support color codes
+version: 3
+player not found: '&4Игрок не найден'
+global mute: '&6Чат отключён'
+global mute enabled: '&eЧат &nвключён'
+global mute disabled: '&1Чат &nвыключен'
+no permissions: '&cУ вас нет прав!'
+inform swear: '{PLAYER} матерится: {MESSAGE}'
+inform flood: '{PLAYER} флудит: {MESSAGE}'
+inform spam: '{PLAYER} спамит: {MESSAGE}'
+inform caps: '{PLAYER} капсит: {MESSAGE}'
+wait cooldown: Вы пишите слишком быстро. Подождите {TIME}
+sec: сек.
+warn capsing: Выключи капслок!{WARNS}
+warn flooding: Прекрати флудить!{WARNS}
+warn swearing: Не матерись!{WARNS}
+warn spamming: Выбери другое место для рекламы!{WARNS}
+warn format: ' [{CURRENT}/{MAX}]'
+successfully: '&3Успешно!'
+swear: Мат
+caps: Капс
+flood: Флуд
+spam: Спам
+hours: hrs.
+days: days
+minutes: mins.
+you are muted: You cant send messages because you are muted for {REASON}. Wait {TIME}
+player muted: 'Player muted for {TIME}. Reason: {REASON}'
+already muted: Player is already muted!
+default reason: Without reason
+is not muted: Player is not muted
+muted: Muted
+'yes': '&4YES'
+'no': '&3NO'
+expiration time: Mute expires

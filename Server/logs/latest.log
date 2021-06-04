@@ -1,0 +1,328 @@
+[23:16:58] [Server thread/INFO]: Starting minecraft server version 1.8.8
+[23:16:58] [Server thread/INFO]: Loading properties
+[23:16:58] [Server thread/INFO]: Default game type: SURVIVAL
+[23:16:58] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-e4d4710-e1ebe52 (MC: 1.8.8) (Implementing API version 1.8.8-R0.1-SNAPSHOT)
+[23:16:58] [Server thread/INFO]: Debug logging is disabled
+[23:16:58] [Server thread/INFO]: Using 4 threads for Netty based IO
+[23:16:58] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[23:16:58] [Server thread/INFO]: Generating keypair
+[23:16:58] [Server thread/INFO]: Starting Minecraft server on 26.47.146.63:25565
+[23:16:58] [Server thread/INFO]: Using default channel type
+[23:16:59] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[23:16:59] [Server thread/INFO]: [INFO][NoCheatPlus] Sat May 08 23:16:59 EEST 2021
+[23:16:59] [Server thread/INFO]: Player instances are stored for efficiency.
+[23:16:59] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v10.8
+[23:16:59] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.1-SNAPSHOT;3437-c6b4772
+[23:16:59] [Server thread/INFO]: [TickOptimizer] Loading TickOptimizer v1.0
+[23:16:59] [Server thread/INFO]: [Essentials] Loading Essentials vTeamCity
+[23:16:59] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat vTeamCity
+[23:16:59] [Server thread/INFO]: [ClearLag] Loading ClearLag v2.8.3
+[23:16:59] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
+[23:16:59] [Server thread/WARN]: [PermissionsEx] This server is in offline mode. Unless this server is configured to integrate with a supported proxy (see http://dft.ba/-8ous), UUIDs *may not be stable*!
+[23:16:59] [Server thread/INFO]: [AutoMessage] Loading AutoMessage v2.5.4
+[23:16:59] [Server thread/INFO]: [WorldBorder] Loading WorldBorder v1.8.5
+[23:16:59] [Server thread/INFO]: [Tablist] Loading Tablist v1.2.3.1
+[23:16:59] [Server thread/INFO]: [Vault] Loading Vault v1.5.6-b49
+[23:16:59] [Server thread/INFO]: [CPFix] Loading CPFix v0.4.0
+[23:16:59] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn vTeamCity
+[23:16:59] [Server thread/INFO]: [ProtocolSupport] Loading ProtocolSupport v4.23.dev
+[23:16:59] [Server thread/INFO]: [ProtocolSupport] Allocator: PooledByteBufAllocator(directByDefault: true), direct: true
+[23:16:59] [Server thread/INFO]: [ProtocolSupport] Compression level: 3
+[23:16:59] [Server thread/INFO]: [ProtocolSupport] Assume 1.5.2 ping delay: 100
+[23:16:59] [Server thread/INFO]: [ProtocolSupport] Assume legacy ping dealy: 200
+[23:16:59] [Server thread/INFO]: [ProtocolSupport] Login threads max count: 8, keep alive time: 60
+[23:16:59] [Server thread/INFO]: [ProtocolSupport] Using injected ServerConnection
+[23:16:59] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v3.7-SNAPSHOT-b234
+[23:16:59] [Server thread/INFO]: [Titlebar] Loading Titlebar v1.2.4.4
+[23:16:59] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.1.2-SNAPSHOT;1651-93d454c
+[23:16:59] [Server thread/INFO]: [NoCheatPlus] Loading NoCheatPlus v3.13.8-SNAPSHOT-sMD5NET-b930
+[23:16:59] [Server thread/INFO]: onLoad: Early set up of static API, configuration, logging.
+[23:16:59] [Server thread/INFO]: [NoCheatPlus] Logging system initialized.
+[23:16:59] [Server thread/INFO]: [NoCheatPlus] Detected Minecraft version: 1.8.8
+[23:16:59] [Server thread/INFO]: [ChestShop] Loading ChestShop v3.8.12
+[23:16:59] [Server thread/INFO]: [Jobs] Loading Jobs v2.62.1
+[23:16:59] [Server thread/INFO]: [WGExtender] Loading WGExtender v1.0
+[23:16:59] [Server thread/INFO]: [ChatGuard] Loading ChatGuard v7.2
+[23:16:59] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v10.8
+[23:16:59] [Server thread/INFO]: ----------------------------
+[23:16:59] [Server thread/INFO]:   SkinsRestorer Updater
+[23:16:59] [Server thread/INFO]:  
+[23:16:59] [Server thread/INFO]: Could not connect to spigotmc.org
+[23:16:59] [Server thread/INFO]: to check for updates! 
+[23:16:59] [Server thread/INFO]:  
+[23:16:59] [Server thread/INFO]: ----------------------------
+[23:16:59] [Server thread/INFO]: [SkinsRestorer] Loaded Skin Factory for v1_8_R3[m
+[23:16:59] [Server thread/INFO]: [0;32;22m==============================================[m
+[23:16:59] [Server thread/INFO]: [0;33;1m  SkinsRestorer Updater[m
+[23:16:59] [Server thread/INFO]: [0;33;1m [m
+[23:16:59] [Server thread/INFO]: [0;36;1m    You are running v[0;32;1m10.8[m
+[23:16:59] [Server thread/INFO]: [0;32;1m    The latest version of SkinsRestorer![m
+[23:16:59] [Server thread/INFO]: [0;33;1m [m
+[23:16:59] [Server thread/INFO]: [0;32;22m==============================================[m
+[23:16:59] [Server thread/INFO]: [TickOptimizer] Enabling TickOptimizer v1.0
+[23:16:59] [Server thread/INFO]: [Vault] Enabling Vault v1.5.6-b49
+[23:16:59] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[23:16:59] [Server thread/INFO]: [Vault] [Permission] PermissionsEx found: Waiting
+[23:16:59] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[23:16:59] [Server thread/INFO]: [Vault] [Chat] PermissionsEx found: Waiting
+[23:16:59] [Server thread/INFO]: [Vault] Enabled Version 1.5.6-b49
+[23:16:59] [Server thread/INFO]: [ProtocolSupport] Enabling ProtocolSupport v4.23.dev
+[23:16:59] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v3.7-SNAPSHOT-b234
+[23:16:59] [Server thread/INFO]: [ProtocolLib] Started structure compiler thread.
+[23:16:59] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[23:16:59] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[23:16:59] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[23:16:59] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[23:16:59] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[23:16:59] [Server thread/INFO]: Preparing level "world"
+[23:17:00] [Server thread/INFO]: -------- World Settings For [world] --------
+[23:17:00] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[23:17:00] [Server thread/INFO]: Item Despawn Rate: 6000
+[23:17:00] [Server thread/INFO]: Item Merge Radius: 2.5
+[23:17:00] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[23:17:00] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[23:17:00] [Server thread/INFO]: Clear tick list: false
+[23:17:00] [Server thread/INFO]: Experience Merge Radius: 3.0
+[23:17:00] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[23:17:00] [Server thread/INFO]: View Distance: 10
+[23:17:00] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[23:17:00] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[23:17:00] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[23:17:00] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Cane Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Melon Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Mob Spawn Range: 4
+[23:17:00] [Server thread/INFO]: Anti X-Ray: true
+[23:17:00] [Server thread/INFO]: 	Engine Mode: 1
+[23:17:00] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[23:17:00] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[23:17:00] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[23:17:00] [Server thread/INFO]: Random Lighting Updates: false
+[23:17:00] [Server thread/INFO]: Sending up to 10 chunks per packet
+[23:17:00] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[23:17:00] [Server thread/INFO]: Max TNT Explosions: 100
+[23:17:00] [Server thread/INFO]: Structure Info Saving: true
+[23:17:00] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[23:17:00] [Server thread/INFO]: Max Entity Collisions: 8
+[23:17:00] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[23:17:00] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[23:17:00] [Server thread/INFO]: Item Despawn Rate: 6000
+[23:17:00] [Server thread/INFO]: Item Merge Radius: 2.5
+[23:17:00] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[23:17:00] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[23:17:00] [Server thread/INFO]: Clear tick list: false
+[23:17:00] [Server thread/INFO]: Experience Merge Radius: 3.0
+[23:17:00] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[23:17:00] [Server thread/INFO]: View Distance: 10
+[23:17:00] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[23:17:00] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[23:17:00] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[23:17:00] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Cane Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Melon Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Mob Spawn Range: 4
+[23:17:00] [Server thread/INFO]: Anti X-Ray: true
+[23:17:00] [Server thread/INFO]: 	Engine Mode: 1
+[23:17:00] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[23:17:00] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[23:17:00] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[23:17:00] [Server thread/INFO]: Random Lighting Updates: false
+[23:17:00] [Server thread/INFO]: Sending up to 10 chunks per packet
+[23:17:00] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[23:17:00] [Server thread/INFO]: Max TNT Explosions: 100
+[23:17:00] [Server thread/INFO]: Structure Info Saving: true
+[23:17:00] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[23:17:00] [Server thread/INFO]: Max Entity Collisions: 8
+[23:17:00] [Server thread/INFO]: -------- World Settings For [world_the_end] --------
+[23:17:00] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[23:17:00] [Server thread/INFO]: Item Despawn Rate: 6000
+[23:17:00] [Server thread/INFO]: Item Merge Radius: 2.5
+[23:17:00] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[23:17:00] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[23:17:00] [Server thread/INFO]: Clear tick list: false
+[23:17:00] [Server thread/INFO]: Experience Merge Radius: 3.0
+[23:17:00] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[23:17:00] [Server thread/INFO]: View Distance: 10
+[23:17:00] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[23:17:00] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[23:17:00] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[23:17:00] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Cane Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Melon Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[23:17:00] [Server thread/INFO]: Mob Spawn Range: 4
+[23:17:00] [Server thread/INFO]: Anti X-Ray: true
+[23:17:00] [Server thread/INFO]: 	Engine Mode: 1
+[23:17:00] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[23:17:00] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[23:17:00] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[23:17:00] [Server thread/INFO]: Random Lighting Updates: false
+[23:17:00] [Server thread/INFO]: Sending up to 10 chunks per packet
+[23:17:00] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[23:17:00] [Server thread/INFO]: Max TNT Explosions: 100
+[23:17:00] [Server thread/INFO]: Structure Info Saving: true
+[23:17:00] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[23:17:00] [Server thread/INFO]: Max Entity Collisions: 8
+[23:17:00] [Server thread/INFO]: Preparing start region for level 0 (Seed: -8968885327558970790)
+[23:17:00] [Server thread/INFO]: Preparing start region for level 1 (Seed: -8968885327558970790)
+[23:17:01] [Server thread/INFO]: Preparing start region for level 2 (Seed: -8968885327558970790)
+[23:17:01] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.1-SNAPSHOT;3437-c6b4772
+[23:17:01] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[23:17:02] [Server thread/INFO]: [WorldEdit] Logging WorldEdit commands to C:\Users\guash\Desktop\Server\plugins\WorldEdit\worldedit.log
+[23:17:02] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_8_R3 as the Bukkit adapter
+[23:17:02] [Server thread/INFO]: [Essentials] Enabling Essentials vTeamCity
+[23:17:02] [Server thread/INFO]: Версия Bukkit изменена. Версия не проверяется
+[23:17:02] [Server thread/INFO]: git-Spigot-e4d4710-e1ebe52 (MC: 1.8.8)
+[23:17:02] [Server thread/INFO]: 1.8.8-R0.1-SNAPSHOT
+[23:17:02] [Server thread/INFO]: Using locale ru_RU
+[23:17:02] [Server thread/INFO]: Using locale ru_RU
+[23:17:02] [Server thread/INFO]: [Vault][Economy] Essentials Economy hooked.
+[23:17:02] [Server thread/INFO]: Essentials: Using config file enhanced permissions.
+[23:17:02] [Server thread/INFO]: Permissions listed in as player-commands will be given to all users.
+[23:17:02] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat vTeamCity
+[23:17:02] [Server thread/INFO]: [ClearLag] Enabling ClearLag v2.8.3
+[23:17:02] [Server thread/INFO]: [ClearLag] Loading modules...
+[23:17:02] [Server thread/INFO]: [ClearLag] Modules have been loaded!
+[23:17:02] [Server thread/INFO]: [ClearLag] Clearlag is now enabled!
+[23:17:02] [Server thread/INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
+[23:17:02] [Server thread/INFO]: [PermissionsEx] Initializing file backend
+[23:17:02] [Server thread/INFO]: [PermissionsEx] Permissions file successfully reloaded
+[23:17:02] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+[23:17:02] [Server thread/INFO]: [Vault][Permission] PermissionsEx hooked.
+[23:17:02] [Server thread/INFO]: [Vault][Chat] PermissionsEx_Chat hooked.
+[23:17:02] [Server thread/INFO]: Essentials: Using PermissionsEx based permissions.
+[23:17:02] [Server thread/INFO]: [AutoMessage] Enabling AutoMessage v2.5.4
+[23:17:02] [Server thread/INFO]: [WorldBorder] Enabling WorldBorder v1.8.5
+[23:17:02] [Server thread/INFO]: [WorldBorder] [CONFIG] Using elliptic/round border, knockback of 3.0 blocks, and timer delay of 5.
+[23:17:02] [Server thread/INFO]: [WorldBorder] [CONFIG] Border-checking timed task started.
+[23:17:02] [Server thread/INFO]: [WorldBorder] For reference, the main world's spawn location is at X: 216,0 Y: 64,0 Z: 252,0
+[23:17:02] [Server thread/INFO]: [Tablist] Enabling Tablist v1.2.3.1
+[23:17:02] [Server thread/INFO]: Tablist> Tablist v1.2.3.1 enabled!!
+[23:17:02] [Server thread/INFO]: [CPFix] Enabling CPFix v0.4.0
+[23:17:02] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn vTeamCity
+[23:17:02] [Server thread/INFO]: [Titlebar] Enabling Titlebar v1.2.4.4
+[23:17:02] [Server thread/INFO]: Titlebar> Titlebar v1.2.4.4 enabled!!
+[23:17:02] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.1.2-SNAPSHOT;1651-93d454c
+[23:17:02] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[23:17:02] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[23:17:02] [Server thread/INFO]: [WorldGuard] (world) Lava fire is blocked.
+[23:17:02] [Server thread/INFO]: [WorldGuard] (world) All fire spread is disabled.
+[23:17:02] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[23:17:02] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[23:17:02] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[23:17:02] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is blocked.
+[23:17:02] [Server thread/INFO]: [WorldGuard] (world_nether) All fire spread is disabled.
+[23:17:02] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[23:17:02] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[23:17:02] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[23:17:02] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is blocked.
+[23:17:02] [Server thread/INFO]: [WorldGuard] (world_the_end) All fire spread is disabled.
+[23:17:02] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[23:17:02] [Server thread/INFO]: [WorldGuard] Loading region data...
+[23:17:02] [Server thread/INFO]: [NoCheatPlus] Enabling NoCheatPlus v3.13.8-SNAPSHOT-sMD5NET-b930
+[23:17:02] [Server thread/INFO]: [NoCheatPlus] McAccess set to: 1.8.4-1.8.8 / Spigot-CB-1.8_R3
+[23:17:02] [Server thread/INFO]: [NoCheatPlus] Added block-info for Minecraft 1.5 blocks.
+[23:17:02] [Server thread/INFO]: [NoCheatPlus] Added block-info for Minecraft 1.6.1 blocks.
+[23:17:02] [Server thread/INFO]: [NoCheatPlus] Added block-info for Minecraft 1.7.2 blocks.
+[23:17:02] [Server thread/INFO]: [NoCheatPlus] Added block-info for Minecraft 1.8 blocks.
+[23:17:02] [Server thread/INFO]: [NoCheatPlus] Inventory checks: FastConsume is available, disabled InstantEat.
+[23:17:02] [Server thread/INFO]: [NoCheatPlus] Adding packet level hooks for ProtocolLib (MC 1.8.8)...
+[23:17:02] [Server thread/INFO]: [NoCheatPlus] Available (and activated) packet level hooks: UseEntityAdapter | MovingFlying | OutgoingPosition | KeepAliveAdapter | SoundDistance
+[23:17:02] [Server thread/WARN]: [NoCheatPlus] Your configuration might be outdated.
+Some settings could have changed, you should regenerate it!
+[23:17:02] [Server thread/INFO]: [NoCheatPlus] Version 3.13.8-SNAPSHOT-sMD5NET-b930 is enabled.
+[23:17:02] [Server thread/INFO]: [ChestShop] Enabling ChestShop v3.8.12
+[23:17:02] [Server thread/ERROR]: WARNING: you seem to not be using the Xerial SQLite driver.  See ORMLite docs on SQLite: http://ormlite.com/docs/sqlite
+[23:17:02] [Server thread/INFO]: creating table 'items'
+[23:17:02] [Server thread/INFO]: executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `items` (`id` INTEGER PRIMARY KEY AUTOINCREMENT , `code` VARCHAR NOT NULL ,  UNIQUE (`code`)) 
+[23:17:02] [Server thread/ERROR]: WARNING: you seem to not be using the Xerial SQLite driver.  See ORMLite docs on SQLite: http://ormlite.com/docs/sqlite
+[23:17:02] [Server thread/INFO]: creating table 'accounts'
+[23:17:02] [Server thread/INFO]: creating index 'accounts_shortName_idx' for table 'accounts
+[23:17:02] [Server thread/INFO]: executed create table statement changed 0 rows: CREATE TABLE IF NOT EXISTS `accounts` (`lastSeenName` VARCHAR NOT NULL , `name` VARCHAR NOT NULL , `shortName` VARCHAR NOT NULL , `uuid` VARCHAR NOT NULL , PRIMARY KEY (`name`) ) 
+[23:17:02] [Server thread/INFO]: executed create table statement changed 0 rows: CREATE INDEX IF NOT EXISTS `accounts_shortName_idx` ON `accounts` ( `shortName` )
+[23:17:02] [Server thread/INFO]: [ChestShop] Vault loaded! Found an economy plugin!
+[23:17:03] [Server thread/INFO]: [Jobs] Enabling Jobs v2.62.1
+[23:17:03] [Jobs-DatabaseSaveTask/INFO]: [0;32;22mStarted database save task.[m
+[23:17:03] [Jobs-BufferedPaymentThread/INFO]: [0;32;22mStarted buffered payment thread.[m
+[23:17:03] [Server thread/INFO]: [0;33;1m[Jobs] [0;33;22mPlugin has been enabled succesfully.[m
+[23:17:03] [Server thread/INFO]: [WGExtender] Enabling WGExtender v1.0
+[23:17:03] [Server thread/INFO]: [ChatGuard] Enabling ChatGuard v7.2
+[23:17:03] [Server thread/INFO]: [ChatGuard] ChatGuard enabled!
+[23:17:03] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:17:03] [Server thread/INFO]: Done (3,480s)! For help, type "help" or "?"
+[23:17:03] [Server thread/INFO]: [0;32;22m[Jobs] Successfully linked with Vault.[m
+[23:17:03] [Server thread/INFO]: [NoCheatPlus] Post-enable running...
+[23:17:03] [Server thread/INFO]: [NoCheatPlus] Post-enable finished.
+[23:17:03] [Craft Scheduler Thread - 6/INFO]: [NoCheatPlus] Added hook: AllViolations(NCP) [1.0].
+[23:17:03] [Craft Scheduler Thread - 10/INFO]: [Vault] Checking for Updates ... 
+[23:17:04] [Craft Scheduler Thread - 3/INFO]: [CPFix] CPFix v0.4.0 is outdated! Recommended version is v0.4.1
+[23:17:04] [Craft Scheduler Thread - 3/INFO]: [CPFix] http://dev.bukkit.org/bukkit-plugins/cpfix/
+[23:17:04] [Craft Scheduler Thread - 10/WARN]: [Vault] Stable Version: 1.7.3 is out! You are still running version: 1.5.6
+[23:17:04] [Craft Scheduler Thread - 10/WARN]: [Vault] Update at: http://dev.bukkit.org/server-mods/vault
+[23:17:17] [LoginProcessingThread/INFO]: UUID of player eruve is d528905a-bf45-39fc-b540-47c707ad44db
+[23:17:17] [Server thread/INFO]: eruve[/26.47.146.63:64643] logged in with entity id 142 at ([world]216.0, 64.0, 252.0)
+[23:17:17] [Thread-13/WARN]: java.util.concurrent.ExecutionException: skinsrestorer.shared.utils.SkinFetchUtils$SkinFetchFailedException: Не найден скин игрока с указанным ником
+[23:17:17] [Thread-13/WARN]: 	at java.util.concurrent.FutureTask.report(Unknown Source)
+[23:17:17] [Thread-13/WARN]: 	at java.util.concurrent.FutureTask.get(Unknown Source)
+[23:17:17] [Thread-13/WARN]: 	at skinsrestorer.shared.utils.SkinFetchUtils.fetchSkinProfile(SkinFetchUtils.java:73)
+[23:17:17] [Thread-13/WARN]: 	at skinsrestorer.shared.format.SkinProfile.attemptUpdate(SkinProfile.java:65)
+[23:17:17] [Thread-13/WARN]: 	at skinsrestorer.bukkit.listeners.LoginListener$2.run(LoginListener.java:82)
+[23:17:17] [Thread-13/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[23:17:17] [Thread-13/WARN]: Caused by: skinsrestorer.shared.utils.SkinFetchUtils$SkinFetchFailedException: Не найден скин игрока с указанным ником
+[23:17:17] [Thread-13/WARN]: 	at skinsrestorer.shared.utils.MojangAPI.getProfile(MojangAPI.java:89)
+[23:17:17] [Thread-13/WARN]: 	at skinsrestorer.shared.utils.SkinFetchUtils$1.call(SkinFetchUtils.java:60)
+[23:17:17] [Thread-13/WARN]: 	at skinsrestorer.shared.utils.SkinFetchUtils$1.call(SkinFetchUtils.java:1)
+[23:17:17] [Thread-13/WARN]: 	at java.util.concurrent.FutureTask.run(Unknown Source)
+[23:17:17] [Thread-13/WARN]: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+[23:17:17] [Thread-13/WARN]: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+[23:17:17] [Thread-13/WARN]: 	... 1 more
+[23:17:17] [Thread-13/WARN]: Exception in thread "Thread-13" 
+[23:17:17] [Thread-13/WARN]: java.lang.NullPointerException
+[23:17:17] [Thread-13/WARN]: 	at skinsrestorer.shared.format.SkinProfile.attemptUpdate(SkinProfile.java:68)
+[23:17:17] [Thread-13/WARN]: 	at skinsrestorer.bukkit.listeners.LoginListener$2.run(LoginListener.java:82)
+[23:17:17] [Thread-13/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[23:17:50] [LoginProcessingThread/INFO]: UUID of player FretoAegiss is c230efc6-ad68-3382-be6f-a966d1f97b5c
+[23:17:50] [Server thread/INFO]: FretoAegiss[/26.47.146.63:64711] logged in with entity id 170 at ([world]222.6727735777265, 70.0, 219.0559095573841)
+[23:17:50] [Thread-14/WARN]: java.util.concurrent.ExecutionException: skinsrestorer.shared.utils.SkinFetchUtils$SkinFetchFailedException: Не найден скин игрока с указанным ником
+[23:17:50] [Thread-14/WARN]: 	at java.util.concurrent.FutureTask.report(Unknown Source)
+[23:17:50] [Thread-14/WARN]: 	at java.util.concurrent.FutureTask.get(Unknown Source)
+[23:17:50] [Thread-14/WARN]: 	at skinsrestorer.shared.utils.SkinFetchUtils.fetchSkinProfile(SkinFetchUtils.java:73)
+[23:17:50] [Thread-14/WARN]: 	at skinsrestorer.shared.format.SkinProfile.attemptUpdate(SkinProfile.java:65)
+[23:17:50] [Thread-14/WARN]: 	at skinsrestorer.bukkit.listeners.LoginListener$2.run(LoginListener.java:82)
+[23:17:50] [Thread-14/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[23:17:50] [Thread-14/WARN]: Caused by: skinsrestorer.shared.utils.SkinFetchUtils$SkinFetchFailedException: Не найден скин игрока с указанным ником
+[23:17:50] [Thread-14/WARN]: 	at skinsrestorer.shared.utils.MojangAPI.getProfile(MojangAPI.java:89)
+[23:17:50] [Thread-14/WARN]: 	at skinsrestorer.shared.utils.SkinFetchUtils$1.call(SkinFetchUtils.java:60)
+[23:17:50] [Thread-14/WARN]: 	at skinsrestorer.shared.utils.SkinFetchUtils$1.call(SkinFetchUtils.java:1)
+[23:17:50] [Thread-14/WARN]: 	at java.util.concurrent.FutureTask.run(Unknown Source)
+[23:17:50] [Thread-14/WARN]: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+[23:17:50] [Thread-14/WARN]: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+[23:17:50] [Thread-14/WARN]: 	... 1 more
+[23:17:50] [Thread-14/WARN]: Exception in thread "Thread-14" 
+[23:17:50] [Thread-14/WARN]: java.lang.NullPointerException
+[23:17:50] [Thread-14/WARN]: 	at skinsrestorer.shared.format.SkinProfile.attemptUpdate(SkinProfile.java:68)
+[23:17:50] [Thread-14/WARN]: 	at skinsrestorer.bukkit.listeners.LoginListener$2.run(LoginListener.java:82)
+[23:17:50] [Thread-14/WARN]: 	at java.lang.Thread.run(Unknown Source)
+[23:17:58] [Async Chat Thread - #0/INFO]: [m[0;33;1m<L>[0;37;1m[⁕][0;33;22m[ОрденБелогоОрла][0;37;1m<FretoAegiss[0;32;1m[m> 11[m
+[23:18:44] [Async Chat Thread - #0/INFO]: [m[0;30;1m[21m[[0;33;22m[21mPlayer[0;30;1m[21m] [0;32;22meruve[m> fds[m
+[23:18:51] [Server thread/INFO]: [0;37;1mUser groups set![m
+[23:18:54] [Async Chat Thread - #0/INFO]: [m[0;33;1m<L>[0;37;1m<eruve[0;32;1m[m> 1[m
+[23:19:27] [Server thread/INFO]: CONSOLE issued server command: /time set day
+[23:19:27] [Server thread/INFO]: [0;33;22mВремя установлено на[0;31;1m [0;31;1m06:00[0;33;22m или [0;31;1m6:00 AM[0;33;22m или [0;31;1m0ticks [0;33;22mв: [0;31;1mworld, world_nether, world_the_end[m
+[23:23:22] [Async Chat Thread - #1/INFO]: [m[0;33;1m<L>[0;37;1m<eruve[0;32;1m[m> Привет, я могу ещё поспамить, надо?[m
+[23:23:24] [Async Chat Thread - #1/INFO]: [m[0;33;1m<L>[0;37;1m[⁕][0;33;22m[ОрденБелогоОрла][0;37;1m<FretoAegiss[0;32;1m[m> В этот раз заплачу максимум 50 рублей[m
+[23:23:27] [Async Chat Thread - #1/INFO]: [m[0;33;1m<L>[0;37;1m<eruve[0;32;1m[m> Ок[m

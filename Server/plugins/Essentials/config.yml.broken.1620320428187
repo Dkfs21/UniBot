@@ -1,0 +1,688 @@
+*############################################################
+# +------------------------------------------------------+ #
+# |                       Notes                          | #
+# +------------------------------------------------------+ #
+############################################################
+
+# If you want to use special characters in this document, such as accented letters, you MUST save the file as UTF-8, not ANSI.
+# If you receive an error when Essentials loads, ensure that:
+#   - No tabs are present: YAML only allows spaces
+#   - Indents are correct: YAML heirarchy is based entirely on indentation
+#   - You have "escaped" all apostrophes in your text: If you want to write "don't", for example, write "don''t" instead (note the doubled apostrphe)
+#   - List items are prefixed with a hyphen and indented:
+#       lists:
+#         - look like this
+#       not:
+#       - like this
+#   - Text with symbols is enclosed in single or double quotation marks
+#   - CraftBukkit and Permissions have been updated: CraftBukkit and Essentials almost always line up, but sometimes other plugins fall behind CraftBukkit's multiple daily updates
+#   - You have saved the document as UTF-8, NOT the default, ANSI
+
+############################################################
+# +------------------------------------------------------+ #
+# |                 Essentials (Global)                  | #
+# +------------------------------------------------------+ #
+############################################################
+
+# A color code between 0-9 or a-f. Set to 'none' to disable.
+ops-name-color: 'none'
+
+# The character(s) to prefix all nicknames, so that you know they are not true usernames.
+nickname-prefix: ''
+
+# Disable this if you have any other plugin, that modifies the displayname of a user.
+change-displayname: true
+
+# Adds the prefix and suffix to the displayname of the player, so it will be displayed in messages and lists.
+# The prefix/suffix can be set using Permissions, Group Manager or PermissionsEx.
+# The value of change-displayname (above) has to be true.
+# If you don't set this, it will default to true if essentials chat is installed.
+# Don't forget to remove the # infront of the line
+add-prefix-suffix: true
+
+# The delay, in seconds, required between /home, /tp, etc.
+teleport-cooldown: 3
+
+# The delay, in seconds, before a user actually teleports.  If the user moves or gets attacked in this timeframe, the teleport never occurs.
+teleport-delay: 0
+
+# The delay, in seconds, required between /heal attempts
+heal-cooldown: 60
+
+# What to prevent from /i /give
+# e.g item-spawn-blacklist: 46,11,10
+item-spawn-blacklist: 175:15,175:14,175 
+
+# Set this to true if you want permission based item spawn rules
+# Note: The blacklist above will be ignored then.
+# Permissions:
+#  - essentials.itemspawn.item-all
+#  - essentials.itemspawn.item-[itemname]
+#  - essentials.itemspawn.item-[itemid]
+#  - essentials.give.item-all
+#  - essentials.give.item-[itemname]
+#  - essentials.give.item-[itemid]
+permission-based-item-spawn: false
+
+# Mob limit on spawnmob
+spawnmob-limit: 1
+
+# Shall we notify users when using /lightning
+warn-on-smite: true
+
+# motd and rules are now configured in the files motd.txt and rules.txt
+
+# When a command conflicts with another plugin, by default, Essentials will try to force the OTHER plugin to take
+# priority.  If a command is in this list, Essentials will try to give ITSELF priority.  This does not always work:
+# usually whichever plugin was updated most recently wins out.  However, the full name of the command will always work.
+# For example, if WorldGuard and Essentials are both enabled, and WorldGuard takes control over /god, /essentials:god
+# will still map to Essentials, whereas it might normally get forced upon WorldGuard.  Commands prefixed with an "e",
+# such as /egod, will always grant Essentials priority.
+# We should try to take priority over /god.  If this doesn't work, use
+# /essentials:god or /egod.  If god is set using WorldGuard, use /ungod to remove then use whichever you see fit.
+overridden-commands:
+  - god
+
+# Disabled commands will be completely unavailable on the server.
+disabled-commands:
+# - nick
+# - i
+# - give
+# - item
+
+# Restricted commands have been removed.
+# Now we have a whitelist, all commands not on this list are only available to ops.
+# These will have NO EFFECT if you have Permissions installed!
+# They are here only if you want something simpler than Permissions.
+# These are the permissions without the "essentials." part.
+player-commands:
+  - afk
+  - back
+  - back.ondeath
+  - balance
+  - balance.others
+  - balancetop
+  - chat.shout
+  - chat.question
+  - clearinventory
+  - compass
+  - depth
+  - delhome
+  - getpos
+  - geoip.show
+  - help
+  - helpop
+  - home
+  - home.others
+  - ignore
+  - info
+  - itemdb
+  - kit
+  - kit.tools
+  - list
+  - mail
+  - mail.send
+  - me
+  - motd
+  - msg
+  - msg.color
+  - nick
+  - near
+  - pay
+  - ping
+  - powertool
+  - powertooltoggle
+  - protect
+  - r
+  - rules
+  - realname
+  - seen
+  - sell
+  - sethome
+  - setxmpp
+  - signs.create.protection
+  - signs.create.trade
+  - signs.break.protection
+  - signs.break.trade
+  - signs.use.balance
+  - signs.use.buy
+  - signs.use.disposal
+  - signs.use.free
+  - signs.use.heal
+  - signs.use.mail
+  - signs.use.protection
+  - signs.use.sell
+  - signs.use.time
+  - signs.use.trade
+  - signs.use.warp
+  - signs.use.weather
+  - spawn
+  - suicide
+  - time
+  - tpa
+  - tpaccept
+  - tpahere
+  - tpdeny
+  - warp
+  - warp.list
+  - world
+  - worth
+  - xmpp
+
+# Note: All items MUST be followed by a quantity!
+# All kit names should be lower case, and will be treated as lower in permissions/costs.
+# Times are measured in seconds.
+kits:
+  bonus:
+    delay: 266400
+    items:
+      - 339 1 name:&6&l_Hаведи_курсором_в_инвентаре lore:&2&lПодарок_от_админа.|_&2&lСкажи_ему_спасибо_=)
+      - 159 64 name:&4Бонус lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 159:1 64 name:&4Бонус lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 170 64 name:&4Бонус lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 95:15 64 name:&4Бонус lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 45 64 name:&4Бонус lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 173 32 name:&4Бонус lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 384 128 name:&4Бонус lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+  help:
+    delay: 266400
+    items:
+      - 264 16 name:&4Помощь lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 388 16 name:&4Помощь lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 265 16 name:&4Помощь lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 266 16 name:&4Помощь lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 351:4 16 name:&4Помощь lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 263 16 name:&4Помощь lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 322:1 16 name:&4Помощь lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+  vip:
+    delay: 266400
+    items:
+      - 339 1 name:&6&lHаведи_курсором_в_инвентаре_(Твои_доступные_команды)&4&l_#1 lore:&2&l_/heal&3&l_-_Вылечить_себя|_&2&l/repair_all&3&l_-_Починить_все_что_находиться_у_Вас_в_инвентаре|_&2&l/me&3&l_-_Написать_в_чат_новость|_&2&l/near&3&l_-_Показать_окружающих_Вас_игроков|_&2&l/jump&3&l_-_Телепорт_на_точку_куда_Вы_смотрите|_&2&l/sethome_(название)&3&l_-_Можно_ставить_до_4_домов|_&2&l/clearinventory&3&l_-_Очистить_свой_инвентарь.
+      - 339 1 name:&6&lHаведи_курсором_в_инвентаре_(Твои_доступные_команды)&4&l_#2 lore:&2&l_/workbench&3&l_-_Открыть_верстак|_&2&l/hat&3&l_-_Одеть_блок_на_голову|_&2&l/firework&3&l_-_Добавить_эффект_на_феерверк|_&2&l/feed&3&l_-_Покушать|_&2&l/rg_flag_<region>_<flag>&3&l_-_Поставить_флаг,_в_регион.
+      - 310 1 Protection:2 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 311 1 Protection:2 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 312 1 Protection:2 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 313 1 Protection:2 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 276 1 Sharpness:3 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 261 1 power:3 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 277 1 Efficiency:3 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 278 1 Efficiency:3 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 279 1 Efficiency:3 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 45 256 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 17 256 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 17:1 256 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 20 256 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 98 256 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 322:1 32 name:&6Вип_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+  vipp:
+    delay: 266400
+    items:
+      - 339 1 name:&6&lHаведи_курсором_в_инвентаре_(Твои_доступные_команды)&4&l#1 lore:&2&l_/ptime_(day,night)&3&l_-_Изменить_свое_время|_&2&l/repair_all&3&l_-_Починить_все_вещи_в_инвентаре|_&2&l/fireball&3&l_-_Стрельнуть_шаром_гаста|_&2&l/back&3&l_-_Вернуться_на_место_смерти|_&2&l/sethome_(название)&3&l_-_Можно_ставить_до_6_домов|_&2&l/top&3&l_-_Подняться_на_вершину|_&2&l/firework&3&l_-_Ставь_эффекты_на_свой_феерверк
+      - 310 1 Protection:4 Thorns:3 Unbreaking:3 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 311 1 Protection:4 Thorns:3 Unbreaking:3 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 312 1 Protection:4 Thorns:3 Unbreaking:3 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 313 1 Protection:4 Thorns:3 Unbreaking:3 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 276 1 Sharpness:5 Unbreaking:3 Looting:3 Fireaspect:2 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 261 1 power:5 Unbreaking:3 Flame:1 Infinity:1 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 277 1 Efficiency:5 Unbreaking:3 Fortune:3 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 278 1 Efficiency:5 Unbreaking:3 Fortune:3 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 279 1 Efficiency:5 Unbreaking:3 Fortune:3 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 45 256 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 17 256 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 17:1 256 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 20 256 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 98 256 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 322:1 32 name:&6&lВип&b&l+&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+  mvp:
+    delay: 266400
+    items:
+      - 339 1 name:&6&lHаведи_курсором_в_инвентаре_(Твои_доступные_команды)_&4&l#1 lore:&2&l_/more&3&l_-_Дюп_предметов_до_стака|_&2&l/god&3&l_-_Режим_бога_&4&l(PvP_Запрещено!)|_&2&l/time_set_(day,north)&3&l_-_Изменять_время_на_сервере|_&2&l/afk&3&l_-_Включить_режим_афк(Отошел)|_&2&l/spawnmob_(mob)&3&l_-_Заспавнить_существо.|_&2&l/clearinventory&3&l_-_Очистить_свой_инвентарь.|_&2&l/weather_(sun,storm)&3&l_-_Изменить_погоду_на_сервере     
+      - 339 1 name:&6&lHаведи_курсором_в_инвентаре_(Твои_доступные_команды)_&4&l#2 lore:&2&l_Все_что_есть_у_vipp_(/kit_vipp)|_&2&l/setwarp&3&l_-_Поставить_точку_варпа|_&2&l/speed_(fly,walk)&3&l_-_Изменить_скорость_хотьбы/полета|_&2&l/fly&3&l_-_Включить_режим_полета|_&2&l/enchant&3&l_-_Зачаровать_вещь_в_руке.|_&2&l/bigtree&3&l_-_Поставить_большое_дерево.|_&2&l/rg_flag_<region>_<flag>&3&l_-_Поставить_флаг,_в_регион.|_&2&l/sethome_(название)&3&l_-_Можно_ставить_до_8_домов.
+      - 138 2 name:&6&lMVP&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 130 2 name:&6&lMVP&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft 
+      - 116 2 name:&6&lMVP&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 47 192 name:&6&lMVP&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft	  
+      - 52 4 name:&6&lMVP&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft 
+      - 57 16 name:&6&lMVP&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft 
+      - 41 16 name:&6&lMVP&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft 
+      - 42 16 name:&6&lMVP&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft 
+      - 92 1 name:&6&lMVP&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 368 16 name:&6&lMVP&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 383:100 16 name:&6&lMVP&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 384 384 name:&6&lMVP&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 354 2 name:&6&lMVP&6&l набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+  mvpp:
+    delay: 500
+    items:
+      - 339 1 name:&6&lHаведи_курсором_в_инвентаре_(Твои_доступные_команды) lore:&3&l_Все_команды_которые_у_mvp_(/kit_mvp)|_&2&l/tree&3&l_-_поставить_дерево|_&2&l/getpos&3&l_-_Ваша_позиция|_&2&l/spawnmob_(mob)&3&l_-_Заспавнить_существо.|_&2&l/home_<players>&3&lТелепорт_в_дом_игрока|_&2&l/sethome_(название)&3&l_-_Можно_ставить_до_10_домов|_&2&l/tppos&3&l_-_Телепортация_по_кординатам
+      - 339 1 name:&6&lHаведи_курсором_в_инвентаре_(Твои_доступные_команды) lore:&3&l_Блоки_тебе_не_нужны._У_тебя_и_так_все_есть.|_&2&l/kit_&3&lvip,vipp,mvp,bonus,help,start|_&2&l/more&3&l_-_Дюп_предметов_до_стака|_&2&l/fly&3&l_-_Включить_режим_полета|_&2&l/god&3&l_-_Режим_бога.
+  start:
+    delay: 43200
+    items:
+      - 339 1 name:&6&lHаведи_курсором_в_инвентаре lore:&2&l_Администрация_сервера,_желает_вам_приятной_игры_!|_&2&lПо_всем_вопросам_обращайся_к_модераторам|_&2&lили_в_контакт_к_администратору.|_&2&lВопросы_-_&6&lhttps://vk.com/ВАШ_ID|_&2&lПо_игровому_процессу_-_&6&lhttps://vk.com/ВАШ_ID
+      - 298 1 Protection:1 Color:85,255,85 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 299 1 Protection:1 Color:255,85,85 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 300 1 Protection:1 Color:85,255,85 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 301 1 Protection:1 Color:255,85,85 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 256 1 Unbreaking:3 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 257 1 Unbreaking:3 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 258 1 Unbreaking:3 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 267 1 Smite:5 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 373:8226 1 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 373:8229 1 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 364 32 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 262 64 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 45 64 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 20 64 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 17 192 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 418 2 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+      - 329 2 name:&4Начальный_набор lore:Киты_предоставил_сервер_X-timecraft|&2&lhttps://vk.com/xtimecraft
+# Essentials Sign Control
+# See http://ess.khhq.net/wiki/Sign_Tutorial for instructions on how to use these.
+# To enable signs, remove # symbol. To disable all signs, comment/remove each sign.
+# Essentials Colored sign support will be enabled when any sign types are enabled.
+# We recommend not enabling chest protection signs if you don't intend to use them, (or are using LWC/Lockette).
+
+enabledSigns:
+  - color
+  - balance
+  - buy  
+  - sell
+  - trade
+  - free
+  - disposal
+  - warp
+  - kit
+  - mail
+  - enchant
+  - gamemode
+  - heal
+  - spawnmob
+  - time
+  - weather
+  - protection
+
+# Backup runs a command while saving is disabled
+backup:
+  # Interval in minutes
+  interval: 60
+  # Add a command that backups your data, e.g.
+  #command: 'rdiff-backup World1 backups/World1'
+
+# Set this true to enable permission per warp.
+per-warp-permission: false
+
+# Sort output of /list command by groups
+sort-list-by-groups: true
+
+# More output to the console
+debug: false
+
+# Set the locale for all messages
+# If you don't set this, the default locale of the server will be used.
+# Don't forget to remove the # infront of the line
+locale: ru
+
+# Turn off god mode when people exit
+remove-god-on-disconnect: true
+
+# Use the permission system of bukkit
+# This only works if no other permission plugins are installed
+use-bukkit-permissions: false
+
+# Auto-AFK
+# After this timeout in seconds, the user will be set as afk.
+# Set to -1 for no timeout.
+auto-afk: 300
+
+# Auto-AFK Kick
+# After this timeout in seconds, the user will be kicked from the server.
+# Set to -1 for no timeout.
+auto-afk-kick: 330
+
+# Set this to true, if you want to freeze the player, if he is afk.
+# Other players or monsters can't push him out of afk mode then.
+# This will also enable temporary god mode for the afk player.
+# The player has to use the command /afk to leave the afk mode.
+freeze-afk-players: false
+
+# When the player is afk, should he be able to pickup items?
+# Enable this, when you don't want people idling in mob traps.
+disable-item-pickup-while-afk: true
+
+# You can disable the death messages of minecraft here
+death-messages: false
+
+# Add worlds to this list, if you want to automatically disable god mode there
+no-god-in-worlds:
+#  - world_nether
+
+# Set to true to enable per-world permissions for teleporting with /world, /tp ,/tpa and /tpo.
+# Give someone permission to teleport to a world with essentials.world.<worldname>
+world-teleport-permissions: false
+
+# The number of items given if the quantity parameter is left out in /item or /give.
+# If this number is below 1, the maximum stack size size is given. If oversized stacks
+# is not enabled, any number higher then the maximum stack size results in more than one stack.
+default-stack-size: -1
+
+# Oversized stacks are stacks that ignore the normal max stacksize.
+# They can be obtained using /give and /item, if the player has essentials.oversizedstacks permission.
+# How many items should be in a oversized stack?
+oversized-stacksize: 64
+
+# Do you allow to repair enchanted weapons and armor?
+# If you set this to false, you can still allow it for certain players using the permission
+# essentials.repair.enchanted
+repair-enchanted: true
+
+#Do you want essentials to keep track of previous location for /back in the teleport listener?
+#If you set this to true any plugin that uses teleport will have the previous location registered.
+register-back-in-listener: false
+
+############################################################
+# +------------------------------------------------------+ #
+# |                   EssentialsHome                     | #
+# +------------------------------------------------------+ #
+############################################################
+
+# If no home is set, send players to spawn when /home is used
+spawn-if-no-home: true
+
+# Allows people to set their bed at daytime
+update-bed-at-daytime: true
+
+# Allow players to have multiple homes.
+# Players need essentials.sethome.multiple before they can have more than 1 home, default to 'default' below.
+# Define different amounts of multiple homes for different permissions, e.g. essentials.sethome.multiple.vip
+# People with essentials.sethome.multiple.unlimited are not limited by these numbers.
+sethome-multiple:  
+  default: 2
+  # essentials.sethome.multiple.vip
+  vip: 4
+  vipp: 6
+  mvp: 8
+  mvpp: 10
+  # essentials.sethome.multiple.staff
+  staff: 7
+
+# Set timeout in seconds for players to accept tpa before request is cancelled.
+# Set to 0 for no timeout
+tpa-accept-cancellation: 45
+
+############################################################
+# +------------------------------------------------------+ #
+# |                   EssentialsEco                      | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Defines the balance with which new players begin.  Defaults to 0.
+starting-balance: 1000
+
+# worth-# defines the value of an item when it is sold to the server via /sell.
+# These are now defined in worth.yml
+
+# Defines the cost to use the given commands PER USE
+command-costs:
+  # /example costs $1000 PER USE
+  #example: 1000
+  # /kit tools costs $1500 PER USE
+  #kit-tools: 1500
+
+# Set this to a currency symbol you want to use.
+currency-symbol: '$'
+
+# Set the maximum amount of money a player can have
+# The amount is always limited to 10 trillions because of the limitations of a java double
+max-money: 1000000
+
+# Set the minimum amount of money a player can have (must be above the negitive of max-money).
+# Setting this to 0, will disable overdrafts/loans completely.  Users need 'essentials.eco.loan' perm to go below 0.
+min-money: -10000
+
+# Enable this to log all interactions with trade/buy/sell signs and sell command
+economy-log-enabled: false
+
+############################################################
+# +------------------------------------------------------+ #
+# |                   EssentialsHelp                     | #
+# +------------------------------------------------------+ #
+############################################################
+
+# Show other plugins commands in help
+non-ess-in-help: false
+
+# Hide plugins which dont give a permission
+# You can override a true value here for a single plugin by adding a permission to a user/group.
+# The individual permission is: essentials.help.<plugin>, anyone with essentials.* or '*' will see all help this setting reguardless.
+# You can use negitive permissions to remove access to just a single plugins help if the following is enabled.
+hide-permissionless-help: true
+
+############################################################
+# +------------------------------------------------------+ #
+# |                   EssentialsChat                     | #
+# +------------------------------------------------------+ #
+############################################################
+
+chat:
+
+  # If EssentialsChat is installed, this will define how far a player's voice travels, in blocks.  Set to 0 to make all chat global.
+  # Note that users with the "essentials.chat.spy" permission will hear everything, regardless of this setting.
+  # Users with essentials.chat.shout can override this by prefixing text with an exclamation mark (!)
+  # Or with essentials.chat.question can override this by prefixing text with a question mark (?)
+  # You can add command costs for shout/question by adding chat-shout and chat-question to the command costs section."
+  radius: 0
+
+  # Chat formatting can be done in two ways, you can either define a standard format for all chat
+  # Or you can give a group specific chat format, to give some extra variation.
+  # If set to the default chat format which "should" be compatible with ichat.
+  # For more information of chat formatting, check out the wiki: http://ess.khhq.net/wiki/Chat_Formatting  
+
+  format: '{DISPLAYNAME} {MESSAGE}'
+  #format: '&7[{GROUP}]&f {DISPLAYNAME}&7:&f {MESSAGE}'
+
+  group-formats:
+    Default: '&a[⁎]&e[ОрденБелогоОрла]&a<{DISPLAYNAME}> &b{MESSAGE}'
+    vip: '{DISPLAYNAME}&7:&2 {MESSAGE}'
+    vipp: '{DISPLAYNAME}&7:&2 {MESSAGE}'
+    mvp: '{DISPLAYNAME}&7:&a {MESSAGE}'
+    mvpp: '{DISPLAYNAME}&7:&a {MESSAGE}'
+    moder: '{DISPLAYNAME}&7:&c {MESSAGE}'
+    gl: '{DISPLAYNAME}&7:&e {MESSAGE}'
+    ivent: '{DISPLAYNAME}&7:&b {MESSAGE}'
+
+  # If your using group formats make sure to remove the '#' to allow the setting to be read.
+
+############################################################
+# +------------------------------------------------------+ #
+# |                 EssentialsProtect                    | #
+# +------------------------------------------------------+ #
+############################################################
+
+protect:
+  # Database settings for sign/rail protection
+
+  # mysql or sqlite
+  datatype: 'sqlite'
+
+  # If you specified MySQL above, you MUST enter the appropriate details here.
+  # If you specified SQLite above, these will be IGNORED.
+  username: 'root'
+  password: 'root'
+  mysqlDb: 'jdbc:mysql://localhost:3306/minecraft'
+
+  # For which block types would you like to be alerted?
+  # You can find a list of IDs in plugins/Essentials/items.csv after loading Essentials for the first time.
+  # 10 = lava :: 11 = still lava :: 46 = TNT :: 327 = lava bucket
+  alert:
+    on-placement:
+    on-use: 
+    on-break: 
+
+  blacklist:
+
+    # Which blocks should people be prevented from placing
+    placement: 10,11,46,327,7,130,397:1,328,407,157
+
+    # Which items should people be prevented from using
+    usage: 327,130,397:1,328,407,157
+
+    # Which blocks should people be prevented from breaking
+    break:
+
+    # Which blocks should not be pushed by pistons
+    piston:
+
+  # General physics/behavior modifications
+  prevent:
+    lava-flow: false
+    water-flow: false
+    water-bucket-flow: false
+    fire-spread: true
+    lava-fire-spread: true
+    flint-fire: false
+    lightning-fire-spread: true
+    portal-creation: false
+    tnt-explosion: true
+    tnt-playerdamage: true
+    tnt-blockdamage: false
+    fireball-explosion: false
+    fireball-fire: false
+    fireball-playerdamage: false
+    creeper-explosion: false
+    creeper-playerdamage: false
+    creeper-blockdamage: false
+    enderdragon-blockdamage: true
+    enderman-pickup: false
+    villager-death: false
+    # Monsters won't follow players
+    # permission essentials.protect.entitytarget.bypass disables this
+    entitytarget: true
+    # Prevent the spawning of creatures
+    spawn:
+      chicken: false
+      cow: false
+      creeper: false
+      ghast: true
+      giant: false
+      monster: false
+      pig: false
+      pig_zombie: false
+      sheep: false
+      skeleton: false
+      slime: false
+      spider: false
+      squid: false
+      zombie: false
+      wolf: false
+      cave_spider: false
+      enderman: false
+      silverfish: false
+      ender_dragon: true
+      villager: true
+      blaze: false
+      mushroom_cow: false
+      magma_cube: false
+      snowman: true
+
+  # Maximum height the creeper should explode. -1 allows them to explode everywhere.
+  # Set prevent.creeper-explosion to true, if you want to disable creeper explosions.
+  creeper:
+    max-height: -1
+
+  # Protect various blocks.
+  protect:
+    # Protect all signs
+    signs: true
+
+    # Prevent users from destroying rails
+    rails: true
+
+    # Blocks below rails/signs are also protected if the respective rail/sign is protected.
+    # This makes it more difficult to circumvent protection, and should be enabled.
+    # This only has an effect if "rails" or "signs" is also enabled.
+    block-below: true
+
+    # Prevent placing blocks above protected rails, this is to stop a potential griefing
+    prevent-block-on-rails: false
+
+    # Store blocks / signs in memory before writing
+    memstore: false
+
+  # Disable various default physics and behaviors
+  disable:
+    # Should fall damage be disabled?
+    fall: false
+
+    # Users with the essentials.protect.pvp permission will still be able to attack each other if this is set to true.
+    # They will be unable to attack users without that same permission node.
+    pvp: false
+
+    # Should drowning damage be disabled?
+    # (Split into two behaviors; generally, you want both set to the same value)
+    drown: false
+    suffocate: false
+
+    # Should damage via lava be disabled?  Items that fall into lava will still burn to a crisp. ;)
+    lavadmg: false
+
+    # Should arrow damage be disabled
+    projectiles: false
+
+    # This will disable damage from touching cacti.
+    contactdmg: false
+
+    # Burn, baby, burn!  Should fire damage be disabled?
+    firedmg: false
+
+    # Should the damage after hit by a lightning be disabled?
+    lightning: false
+
+    # Should people with build: false in permissions be allowed to build
+    # Set true to disable building for those people
+    build: true
+
+    # Should people with build: false in permissions be allowed to use items
+    # Set true to disable using for those people
+    use: true
+
+    # Should we tell people they are not allowed to build
+    warn-on-build-disallow: true
+
+    # Disable weather options
+    weather:
+      storm: true
+      thunder: false
+      lightning: false
+
+############################################################
+# +------------------------------------------------------+ #
+# |            Essentials Spawn / New Players            | #
+# +------------------------------------------------------+ #
+############################################################
+
+newbies:
+  # Should we announce to the server when someone logs in for the first time?
+  # If so, use this format, replacing {DISPLAYNAME} with the player name.
+  # If not, set to ''
+  #announce-format: ''
+  announce-format:  '&eДобро пожаловать  &r{DISPLAYNAME} &e'
+
+  # When we spawn for the first time, which spawnpoint do we use?
+  # Set to "none" if you want to use the spawn point of the world.
+  spawnpoint: newbies
+  
+  # Do we want to give users anything on first join? Set to '' to disable
+  # This kit will be given reguardless of cost, and permissions.
+  #kit: 'start'
+  kit: 'start'
+
+# Set this to lowest, if you want Multiverse to handle the respawning
+# Set this to high, if you want EssentialsSpawn to handle the respawning
+# Set this to highest, if you want to force EssentialsSpawn to handle the respawning
+respawn-listener-priority: high
+
+# When users die, should they respawn at their first home or bed, instead of the spawnpoint?
+respawn-at-home: true
+
+# End of File <-- No seriously, you're done with configuration.

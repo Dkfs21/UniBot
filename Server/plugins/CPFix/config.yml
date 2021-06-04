@@ -1,0 +1,24 @@
+general:
+  check-updates: true
+  language: russian
+  language-save: false
+white-list:
+  enable: true
+  replace: _
+code-page:
+  chat-fix-enable: true
+  command-fix-enable: true
+  sign-fix-enable: true
+  book-fix-enable: true
+  lore-fix-enable: false
+  inform-player: true
+output-recode:
+  console:
+    enable: false
+    code-page: IBM866
+  server-log:
+    enable: false
+    code-page: IBM866
+input-recode:
+  enable: false
+  code-page: IBM866
