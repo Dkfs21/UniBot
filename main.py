@@ -43,7 +43,7 @@ def bot_main(message):
 
 	elif message.text == '📅 Розклад ІКПІ':
 		bot.send_message(message.from_user.id, "Зачекайте, відправляємо файл...")
-		bot.send_document(message.chat.id, open(r'Files\Stud\Розклад\ ІКПІ.docx', 'rb'))
+		bot.send_document(message.chat.id, open(r'Files/Stud/Розклад ІКПІ.docx', 'rb'))
 
 
 	elif message.text == "💬 Зв'язок з деканатом ІКПІ":
@@ -65,7 +65,7 @@ def bot_main(message):
 
 	elif message.text == '📅 Розклад КБКіРТ':
 		bot.send_message(message.from_user.id, "Зачекайте, відправляємо файл...")
-		bot.send_document(message.chat.id, open(r'Files\Stud\Розклад\ КБКіРТ.docx', 'rb'))
+		bot.send_document(message.chat.id, open(r'Files/Stud/Розклад КБКіРТ.docx', 'rb'))
 
 	elif message.text == "💬 Зв'язок з деканатом КБКіРТ":
 		bot.send_message(message.from_user.id, "Тут будет Зв'язок з деканатом")
@@ -86,7 +86,7 @@ def bot_main(message):
 
 	elif message.text == '📅 Розклад БіСК':
 		bot.send_message(message.from_user.id, "Зачекайте, відправляємо файл...")
-		bot.send_document(message.chat.id, open(r'Files\Stud\Розклад\ БіСК.docx', 'rb'))
+		bot.send_document(message.chat.id, open(r'Files/Stud/Розклад БіСК.docx', 'rb'))
 
 	elif message.text == "💬 Зв'язок з деканатом БіСК":
 		bot.send_message(message.from_user.id, "Тут будет Зв'язок з деканатом")
@@ -107,7 +107,7 @@ def bot_main(message):
 
 	elif message.text == '📅 Розклад ЗН':
 		bot.send_message(message.from_user.id, "Зачекайте, відправляємо файл...")
-		bot.send_document(message.chat.id, open(r'Files\Stud\Розклад\ ЗН.docx', 'rb'))
+		bot.send_document(message.chat.id, open(r'Files/Stud/Розклад ЗН.docx', 'rb'))
 
 
 	elif message.text == "💬 Зв'язок з деканатом ЗН":
@@ -127,7 +127,7 @@ def bot_main(message):
 
 	elif message.text == '💵 Ціни контрактів':
 		bot.send_message(message.from_user.id, "Зачекайте, відправляємо файл...")
-		bot.send_document(message.chat.id, open(r'Files\Abitur\Ціниконтракту.pdf', 'rb'))
+		bot.send_document(message.chat.id, open(r'Files/Abitur/Ціни контракту.pdf', 'rb'))
 
 	elif message.text == '🧾 Інформація про ЗНО':
 		bot.send_message(message.from_user.id, "📑 Для того щоб вступити до нас необхідно отримати наступні сертифікати ЗНО: \n - українська мова та література; \n - математика; \n - фізика, іноземна мова, історія, географія, біологія, хімія - на вибір.")
